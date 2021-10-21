@@ -7,29 +7,40 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  height:98vh;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-.left {
-  width: calc(50% - 2rem);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/happy-akansha.jpeg);
-  min-height: 100%;
-}
+@media only screen and (min-width: 1025px) {
+  .container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height:98vh;
+  }
 
-.right {
-  width: calc(50%);
+  .left {
+    width: calc(50% - 2rem);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/happy-akansha.jpeg);
+    min-height: 100%;
+  }
+
+  img {
+    display: none;
+  }
+
+  .right {
+    width: calc(50%);
+  }
 }
 
 img {
   width: 100%;
   height: auto;
-  display: none;
 }
 
 .title {
@@ -37,11 +48,11 @@ img {
 }
 
 .social-links a {
-    padding: 5px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
+  padding: 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .fa-youtube {
